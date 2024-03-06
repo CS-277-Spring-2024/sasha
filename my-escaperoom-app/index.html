@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Svelte</title>
+    <style>
+      body{
+        margin:0px;
+        overflow:hidden;
+      }
+      .app-text{
+        position: fixed;
+        bottom: 10;
+        right: 10;
+        z-index:1 100;
+        border:2px solid black;
+        background: #decade;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 2rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+
+      }
+      /* form{
+        position: relative;
+        bottom:100;
+        right:0;
+      } */
+    </style>
+  </head>
+  <body>
+
+    <div id="flower-find" class = "app-text" style = "display:none">
+      can you find this flower from the patch? mouse over it!
+      <img src = "new_nast.png" style="width:70px;height:70px;">
+    </div> 
+    
+    <div id = "found" class = "app-text" style = "display:none">
+      you found it!
+    </div>
+
+    <div id="intro" class = "app-text" style = "display:none">
+      hello
+      
+    </div>
+    <div id = "riddle" class = "app-text" style = "display:none">
+    What city will this portal magick you away to? A hint: it's where fruit exists
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
